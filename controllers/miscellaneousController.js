@@ -3,7 +3,7 @@ import Contact from "../models/contactModel.js"
 
 
 export const contactUs = async (req, res, next) => {
-    const {name, email, phoneNumber, message} = req.body;
+    const {name, email, phoneNumber, message} = req.body;     // Testing comment for git pull request
 
     if (!name || !email || !phoneNumber) {
         return res.status(400).json({
