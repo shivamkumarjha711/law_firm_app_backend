@@ -1,7 +1,7 @@
 import User from "../models/userModel.js";
 
 export const register = async (req, res, next) => {
-    const {fullName, email, password} = req.body;
+    const {fullName, email, password} = req.body;      // This line is for check how git branch work
 
     if (!fullName || !email || !password) {
         res.status(400).json({
